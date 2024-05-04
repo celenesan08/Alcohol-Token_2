@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcohol Registration Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Alcohol Token Registration Form</h1>
+        <form id="customerForm">
+            <label for="name">Rank, Last, First M </label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Service Branch & Assigned Unit:</label>
+            <input type="email" id="email" name="email" required><br>
+            <p> I have reviewed AUABI 34-219, Alcohol and Lounge Program, and affirm that I will comply with its provisions. <br>
+                I understand I am not to share my drinks (token) with anyone at any time.<br>
+                I understand that I am not permitted to consume more than three (3) alcoholic beverages in an 18-hour period.<br>
+                I understand that I am prohibited from operating a motor vehicle within eight (8) hours of consuming any amount of alcohol. <br> 
+            </p>
+        
+            <input type="checkbox" id="agree" required>
+            <label for="agree">I agree to the terms and conditions</label><br>
+            <button type="submit">Generate Public URL</button>
+            <!-- Add more fields as needed -->
+    
+        </form>
+        <div id="publicURL"></div>
+    </div>
+    <script src="script.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
